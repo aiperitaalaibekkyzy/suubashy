@@ -1,0 +1,22 @@
+.nav
+  background: #FFFFFF
+  filter: drop-shadow(0px 4px 15px rgba(4, 16, 61, 0.15))
+  box-sizing: border-box
+  height: 50px
+
+.header_nav 
+  height: rem(50px)
+  @extend %space-between
+  
+.nav_link
+  color: $textColor
+  font-weight: 400
+  font-size: 14px
+  text-transform: uppercase
+  &:hover
+    color: #2171DD
+  &:active
+    color: $primaryColor
+    font-weight: 600
+  +xl
+    display: none
