@@ -1,0 +1,28 @@
+$primaryColor: #2171DD
+$textColor: #010221
+$thirdColor: #F3F3F8
+
+// $regular: 'Montserrat-Regular', sans-serif
+// $medium: 'Montserrat-Medium', sans-serif
+// $semibold: 'Montserrat-Semibold', sans-serif
+// $bold: 'Montserrat-Bold', sans-serif
+
+
+@function rem($px)
+  @return $px / 16px + 0rem
+
+=sm
+  @media screen and (min-width: 480px)
+    @content
+
+=md
+  @media screen and (min-width: 768px)
+    @content
+
+=lg
+  @media screen and (min-width: 992px)
+    @content
+
+=xl
+  @media screen and (min-width: 1200px)
+    @content

@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Lora';
+    src: url('Lora-SemiBold.eot');
+    src: url('Lora-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Lora-SemiBold.woff2') format('woff2'),
+        url('Lora-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('Lora-Medium.eot');
+    src: url('Lora-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Lora-Medium.woff2') format('woff2'),
+        url('Lora-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('Lora-Regular.eot');
+    src: url('Lora-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Lora-Regular.woff2') format('woff2'),
+        url('Lora-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('Lora-Bold.eot');
+    src: url('Lora-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Lora-Bold.woff2') format('woff2'),
+        url('Lora-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
