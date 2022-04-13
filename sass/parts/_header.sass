@@ -1,0 +1,33 @@
+.header
+  @include gradient(top, $list1)
+  max-height: 130px
+.header_container
+  @extend %space-around
+  max-width: 950px
+
+.header_gerb
+  max-width: 80px
+  +xl
+    max-width: 60px
+  +md
+    max-width: 30px
+.header_flag
+  max-width: 90px
+  +xl
+    max-width: 70px
+  +md
+    max-width: 30px
+.header_title
+  font-family: 'Lora'
+  font-weight: 600
+  font-size: 25px
+  color: white
+  text-transform: uppercase
+  max-width: rem(700px)
+  text-align: center
+  +xl
+    font-size: 26px
+  +md
+    font-size: 12px
+    max-width: rem(250px)
+    word-break: break-word
