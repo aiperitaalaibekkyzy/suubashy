@@ -1,0 +1,129 @@
+.banner
+  width: 100%
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/BG.jpg')
+  background:
+    size: cover
+    position: center center
+    repeat: no-repeat
+  top: 0
+  left: 0
+  height: rem(800px)
+  +xl
+    height: rem(700px)
+  +md
+    height: rem(500px)
+
+.info_cover 
+  display: block
+  max-width: 1200px
+  margin: auto
+  padding: 200px 20px 0 20px
+  text-align: center
+  transition: .5s
+  +lg
+    padding-top: 150px
+    max-width: 600px
+    margin: auto
+  +md
+    padding-top: 80px
+    +sm
+    padding-top: 40px
+
+.banner_title
+  font-family: 'Lora'
+  font-weight: bold
+  font-size: 36px
+  text-align: center
+  color: #ffffff
+  margin-bottom: 20px
+  text-transform: uppercase
+  +xl
+    font-size: 26px
+  +lg
+    font-size: 20px
+  +md
+    font-size: 18px
+
+.banner_subtitle
+  font-weight: 600
+  font-size: 22px
+  margin: 10px
+  color: #ffffff
+  +lg
+    font-size: 18px
+  +md
+    font-size: 16px
+    font-weight: normal
+
+.search_form
+  @extend %center
+  margin: 55px auto 55px
+  +md
+    margin: 35px auto 35px
+
+.search_input, .search_btn
+  height: 50px
+  box-shadow: 0px 4px 7px rgba(4, 16, 61, 0.35)
+  border: none
+  outline: none
+  +md
+    height: 40px
+  +sm
+    font-size: 14px
+.search_input
+  width: rem(632px)
+  padding: 0 10px 0 20px
+  background: #FFFFFF
+  border-radius: 5px 0 0 5px
+  +lg
+    width: rem(400px)
+  +md
+    width: rem(300px)
+  +sm
+    width: rem(200px)
+.search_btn
+  background: $primaryColor
+  color: #ffffff
+  border-radius: 0 5px 5px 0
+  width: rem(95px)
+  cursor: pointer
+  +sm
+    width: rem(60px)
+
+.banner-btns_cover
+  max-width: rem(600px)
+  margin: auto
+  display: flex
+  align-items: center
+  justify-content: space-between
+  +lg
+    max-width: rem(500px)
+  +md
+    max-width: rem(350px)
+  +sm
+    height: rem(110px)
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-direction: column
+.nav_btn
+  color: #ffffff
+  background:$primaryColor
+  padding: 18px 40px
+  min-width: 200px
+  border-radius: 5px
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06)
+  transition: .5s
+  cursor: pointer
+  &:hover
+    transition: all .4s ease-in-out
+    background-image: linear-gradient(to right, #206ED7, #549DFF, #237AEF, #134E9D)
+  +lg
+    padding: 14px 20px
+  +md
+    min-width: 100px
+
+
+.fa-arrow-right-long
+  color: #ffffff
+  width: 18px
