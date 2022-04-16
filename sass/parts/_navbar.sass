@@ -1,14 +1,43 @@
+.nav_container 
+  position: relative
+  +xl
+    display: flex
+    align-items: center
+    justify-content: end
 .nav
   background: #FFFFFF
   filter: drop-shadow(0px 4px 15px rgba(4, 16, 61, 0.15))
   box-sizing: border-box
   height: 50px
+  +xl
+    height: 58px
 
 .header_nav 
-  height: rem(50px)
+  text-align: center
   @extend %space-between
-  
+  +xl
+    position: absolute
+    top: 100%
+    left: 0
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    background: #ffffff
+    height: 0
+    min-height: 0
+    transition: .3s
+    overflow: hidden
+    visibility: hidden
+
+.header_nav.is-active
+  padding: 3rem 0
+  height: 70vh
+  max-height: 70vh
+  visibility: visible
 .nav_link
+  padding: 1rem .3rem
+  display: inline-block
   color: $textColor
   font-weight: 400
   font-size: 14px
@@ -18,5 +47,3 @@
   &:active
     color: $primaryColor
     font-weight: 600
-  +xl
-    display: none
