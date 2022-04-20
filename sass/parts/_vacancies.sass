@@ -1,0 +1,57 @@
+.vacancies_title
+  font-family: 'Lora', serif
+  font-weight: 500
+  text-align: center
+  font-size: 30px
+  +md
+    font-size: 26px
+.vacancies_container 
+  box-sizing: border-box
+  max-width: rem(1250px)
+  margin: 40px auto 60px auto
+  @extend %space-around
+  transition: .5s
+  +md
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+.vacancy_card
+  background: #FFFFFF
+  border: 1px solid #E0EDF5
+  border-radius: 3px
+  padding: 25px 28px
+  max-width: rem(510px)
+  margin: 10px 15px
+  h2
+    font-size: 20px
+    margin: 0 0 20px 0
+  +xl
+    max-width: rem(330px)
+.vacancy_heading
+  cursor: pointer
+  transition: .5s
+  &:hover
+    color: $primaryColor
+    text-decoration: underline
+.announced, .deadline
+  @extend %justify-start
+.announced-date, .deadline-date
+  margin: 0 
+  font-weight: 400
+  line-height: 24px
+.vacancy_text
+  text-align: left
+  line-height: 24px
+
+.pagination_cover 
+  text-align: center
+  @extend %space-between
+  max-width: rem(400px)
+  margin: auto
+  a
+    cursor: pointer
+    &:hover
+      text-decoration: underline
+  +sm
+    font-size: 13px
+    max-width: rem(300px)

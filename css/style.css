@@ -65,7 +65,7 @@ html, body {
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #010221;
+  color: #1C1C1C;
 }
 
 a {
@@ -84,6 +84,10 @@ ul {
   margin: 0 auto;
 }
 
+.wrapper_container {
+  margin: 60px auto 80px auto;
+}
+
 .header {
   padding: 10px;
 }
@@ -94,19 +98,19 @@ ul {
   justify-content: center;
 }
 
-.footer_items, .header_nav {
+.pagination_cover, .footer_items, .header_nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header_container {
+.vacancies_container, .header_container {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-.address_cover, .email_cover, .tel_cover {
+.announced, .deadline, .address_cover, .email_cover, .tel_cover {
   display: flex;
   align-items: center;
   justify-content: start;
@@ -142,7 +146,7 @@ ul {
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-  background-color: #010221;
+  background-color: #1C1C1C;
 }
 
 .hamburger-box {
@@ -167,7 +171,7 @@ ul {
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: #010221;
+  background-color: #1C1C1C;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -614,7 +618,7 @@ template, [hidden] {
 .nav_link {
   padding: 1rem 0.3rem;
   display: inline-block;
-  color: #010221;
+  color: #1C1C1C;
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
@@ -929,6 +933,88 @@ template, [hidden] {
 .copy_text {
   margin: auto;
   font-weight: lighter;
+}
+
+.vacancies_title {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+  .vacancies_title {
+    font-size: 26px;
+  }
+}
+
+.vacancies_container {
+  box-sizing: border-box;
+  max-width: 78.125rem;
+  margin: 40px auto 60px auto;
+  transition: 0.5s;
+}
+@media screen and (max-width: 768px) {
+  .vacancies_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.vacancy_card {
+  background: #FFFFFF;
+  border: 1px solid #E0EDF5;
+  border-radius: 3px;
+  padding: 25px 28px;
+  max-width: 31.875rem;
+  margin: 10px 15px;
+}
+.vacancy_card h2 {
+  font-size: 20px;
+  margin: 0 0 20px 0;
+}
+@media screen and (max-width: 1200px) {
+  .vacancy_card {
+    max-width: 20.625rem;
+  }
+}
+
+.vacancy_heading {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.vacancy_heading:hover {
+  color: #2171DD;
+  text-decoration: underline;
+}
+
+.announced-date, .deadline-date {
+  margin: 0;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.vacancy_text {
+  text-align: left;
+  line-height: 24px;
+}
+
+.pagination_cover {
+  text-align: center;
+  max-width: 25rem;
+  margin: auto;
+}
+.pagination_cover a {
+  cursor: pointer;
+}
+.pagination_cover a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 480px) {
+  .pagination_cover {
+    font-size: 13px;
+    max-width: 18.75rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
