@@ -1,10 +1,3 @@
-.vacancies_title
-  font-family: 'Lora', serif
-  font-weight: 500
-  text-align: center
-  font-size: 30px
-  +md
-    font-size: 26px
 .vacancies_container 
   box-sizing: border-box
   max-width: rem(1250px)
@@ -28,14 +21,15 @@
   +xl
     max-width: rem(330px)
 .vacancy_heading
+  font-size: 20px
   cursor: pointer
   transition: .5s
   &:hover
     color: $primaryColor
     text-decoration: underline
-.announced, .deadline
+.announced
   @extend %justify-start
-.announced-date, .deadline-date
+.announced-date
   margin: 0 
   font-weight: 400
   line-height: 24px
