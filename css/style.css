@@ -92,6 +92,18 @@ ul {
   padding: 10px;
 }
 
+.title {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 26px;
+  }
+}
+
 .search_form {
   display: flex;
   align-items: center;
@@ -110,7 +122,7 @@ ul {
   justify-content: space-around;
 }
 
-.announced, .deadline, .address_cover, .email_cover, .tel_cover {
+.announced, .address_cover, .email_cover, .tel_cover {
   display: flex;
   align-items: center;
   justify-content: start;
@@ -224,7 +236,7 @@ ul {
  * * 1. Correct the line height in all browsers.
  * * 2. Prevent adjustments of font size after orientation changes in iOS. */
 html {
-  line-height: 1.15;
+  line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
@@ -843,14 +855,8 @@ template, [hidden] {
   background: -moz-linear-gradient(top, #124C9A, #2171DD);
   background: -o-linear-gradient(top, #124C9A, #2171DD);
   background: linear-gradient(top, #124C9A, #2171DD);
-  max-height: 18.75rem;
   margin-top: 0px;
   padding-top: 15px;
-}
-@media screen and (max-width: 1200px) {
-  .footer {
-    max-height: 21.875rem;
-  }
 }
 
 .footer_container {
@@ -922,6 +928,9 @@ template, [hidden] {
   background: #134D9B;
   margin-top: 15px;
   padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 480px) {
   .copyrights {
@@ -933,18 +942,6 @@ template, [hidden] {
 .copy_text {
   margin: auto;
   font-weight: lighter;
-}
-
-.vacancies_title {
-  font-family: "Lora", serif;
-  font-weight: 500;
-  text-align: center;
-  font-size: 30px;
-}
-@media screen and (max-width: 768px) {
-  .vacancies_title {
-    font-size: 26px;
-  }
 }
 
 .vacancies_container {
@@ -980,6 +977,7 @@ template, [hidden] {
 }
 
 .vacancy_heading {
+  font-size: 20px;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -988,7 +986,7 @@ template, [hidden] {
   text-decoration: underline;
 }
 
-.announced-date, .deadline-date {
+.announced-date {
   margin: 0;
   font-weight: 400;
   line-height: 24px;
@@ -1015,6 +1013,26 @@ template, [hidden] {
     font-size: 13px;
     max-width: 18.75rem;
   }
+}
+
+.vacancy_container {
+  max-width: 75rem;
+  margin: 40px auto 60px auto;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+@media screen and (max-width: 992px) {
+  .vacancy_container {
+    max-width: 43.75rem;
+  }
+}
+
+p.vacancy-list_title {
+  font-weight: bold;
+}
+
+.vacancy-list_item {
+  list-style-type: " - ";
 }
 
 /*# sourceMappingURL=style.css.map */
