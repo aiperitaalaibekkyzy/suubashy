@@ -1,0 +1,24 @@
+extends ../layout
+
+block title
+  title Галерея
+
+block header 
+  include ../includes/header
+  include ../includes/navbar
+
+block content
+  .container.wrapper_container
+    h1.gallery_title.title Галерея
+    .gallery_container.popup-gallery
+      a.popup(href="img/pic01.png" title="Здесь будет краткое описание и дата фотографии") 
+        img.popup-image(src="img/pic01.png" )
+      a.popup(href="img/pic02.jpg" title="Здесь будет краткое описание и дата фотографии") 
+        img.popup-image(src="img/pic02.jpg" )
+      a.popup(href="img/pic03.png" title="Здесь будет краткое описание и дата фотографии") 
+        img.popup-image(src="img/pic03.png" )
+      a.popup(href="img/pic04.jpg" title="Здесь будет краткое описание и дата фотографии") 
+        img.popup-image(src="img/pic04.jpg" )
+
+block footer
+  include ../includes/footer
